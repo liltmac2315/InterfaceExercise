@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace InterfaceExercise
 {
-    internal interface Icompany
+    internal interface ICompany
     {
+        public string CompanyName { get; set; }
+        public string Motto { get; set; }
     }
 }
