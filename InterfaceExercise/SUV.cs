@@ -43,14 +43,9 @@ namespace InterfaceExercise
             Console.WriteLine();
         }
 
-        public void ChangedGears(bool isChanged)
+        public void ChangeGears(bool isChanged)
         {
             HasChangedGears = isChanged;
-        }
-
-        public bool ChangeGears(bool ischanged)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace InterfaceExercise
 {
-    internal class Car : IVehicle, ICompany
+    public class Car : IVehicle, ICompany
     {
-        public Car() 
-        { 
-        
+        public Car()
+        {
+
         }
 
         public double EngineSize { get; set; } = 4.6;
@@ -20,9 +20,9 @@ namespace InterfaceExercise
         public int SeatCount { get; set; } = 4;
         public string CompanyName { get; set; } = "Ford";
         public string Motto { get; set; } = "Built Ford Tough";
-        public bool HasChangedGears { get; set; } 
+        public bool HasChangedGears { get; set; }
 
-        public void Drive() 
+        public void Drive()
         {
             Console.WriteLine($"{GetType().Name} now driving forward . . .");
         }
@@ -40,19 +40,15 @@ namespace InterfaceExercise
             }
         }
 
-        public void Park() 
+        public void Park()
         {
             Console.WriteLine();
         }
 
-        public void ChangedGears(bool isChanged) 
+        public void ChangeGears(bool isChanged)
         {
             HasChangedGears = isChanged;
         }
 
-        public bool ChangeGears(bool ischanged)
-        {
-            throw new NotImplementedException();
-        }
-    }
+    }   
 }
